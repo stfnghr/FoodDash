@@ -23,7 +23,7 @@ class MenuSeeder extends Seeder
                 'Telur dadar gulung isi sayur.',
                 'Buah potong (semangka dan melon).'
             ],
-            'image' => ''
+            'image' => 'images/daily_protein.jpeg'
         ]);
 
         Menu::create([

@@ -27,7 +27,7 @@
             </div>
 
             <p class="text-center pb-5 text-xs">
-                © 2024 FoodDash Catering All Rights Reserved
+                © 2025 FoodDash Catering All Rights Reserved
             </p>
         </div>
     </footer>
