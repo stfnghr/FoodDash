@@ -49,7 +49,7 @@
                 @endif
 
                 <p class="mt-6 text-sm text-[#8E5F39] text-center">
-                    Don’t have an account yet?
+                     Belum punya akun?
                     <a href="/signup" class="font-bold text-black underline hover:text-[#8E5F39]">Sign Up</a>
                 </p>
 

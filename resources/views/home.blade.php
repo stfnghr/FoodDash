@@ -1,10 +1,10 @@
 <x-layout>
     <x-slot:layoutTitle>{{ $pageTitle }}</x-slot:layoutTitle>
-    <x-slot:headTitle>Home</x-slot:headTitle>
+    <x-slot:headTitle>Beranda</x-slot:headTitle>
     
-    <h1 class="text-3xl p-5 text-center font-bold">PACKAGES</h1>
+    <h1 class="text-3xl p-5 text-center font-bold">PAKET</h1>
 
-    {{-- Non-Vegetarian Section --}}
+    {{-- Bagian Non-Vegetarian --}}
     <h2 class="text-xl font-semibold mt-10">NON-VEGETARIAN</h2>
     <div class="flex flex-wrap gap-4 mt-5 px-10">
         @foreach ($menus as $menu)
@@ -12,13 +12,13 @@
                 <div class="bg-[#E9A05E] p-8 rounded-3xl shadow-md w-[48%] h-60 flex justify-center items-center">
                     <a href="/detailMenu/{{ $menu->id }}">
                         <div class="flex space-x-4 items-center">
-                            <img src="{{ $menu->image ?? '/default-image.jpg' }}" alt="food" class="w-16">
+                            <img src="{{ $menu->image ?? '/default-image.png' }}" alt="makanan" class="w-16">
                             <div>
                                 <h1 class="text-xl font-bold">{{ $menu->name }}</h1>
                                 <p class="text-md font-medium">
                                     {{ explode('.', $menu->description)[0] }}.
                                 </p>
-                                <p class="text-lg font-semibold">Rp{{ number_format($menu->price, 0, ',', '.') }}/30 Days</p>
+                                <p class="text-lg font-semibold">Rp{{ number_format($menu->price, 0, ',', '.') }}/30 Hari</p>
                             </div>
                         </div>
                     </a>
@@ -27,7 +27,7 @@
         @endforeach
     </div>
 
-    {{-- Vegetarian Section --}}
+    {{-- Bagian Vegetarian --}}
     <h2 class="text-xl font-semibold mt-20">VEGETARIAN</h2>
     <div class="flex flex-wrap gap-4 mt-5 px-10">
         @foreach ($menus as $menu)
@@ -35,13 +35,13 @@
                 <div class="bg-[#E9A05E] p-8 rounded-3xl shadow-md w-[48%] h-60 flex justify-center items-center">
                     <a href="/detailMenu/{{ $menu->id }}">
                         <div class="flex space-x-4 items-center">
-                            <img src="{{ $menu->image ?? '/default-image.jpg' }}" alt="food" class="w-16">
+                            <img src="{{ $menu->image ?? '/default-image.png' }}" alt="makanan" class="w-16">
                             <div>
                                 <h1 class="text-xl font-bold">{{ $menu->name }}</h1>
                                 <p class="text-md font-medium">
                                     {{ explode('.', $menu->description)[0] }}.
                                 </p>                                
-                                <p class="text-lg font-semibold">Rp{{ number_format($menu->price, 0, ',', '.') }}/30 Days</p>
+                                <p class="text-lg font-semibold">Rp{{ number_format($menu->price, 0, ',', '.') }}/30 Hari</p>
                             </div>
                         </div>
                     </a>

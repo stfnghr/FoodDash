@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:layoutTitle>{{ $pageTitle }}</x-slot:layoutTitle>
-    <x-slot:headTitle>Order</x-slot:headTitle>
+    <x-slot:headTitle>Pesanan</x-slot:headTitle>
 
     @forelse ($orders as $order)
         @foreach ($order->orderDetails as $orderDetail)
@@ -16,7 +16,7 @@
                             <div class="text-left">
                                 <h1 class="text-3xl font-bold">{{ $orderDetail->menu->name }}</h1>
                                 <p class="py-3">{{ $order->start_date }} - {{ $order->end_date }}</p>
-                                <p class="text-green-600">{{ $order->payment_status == 'Paid' ? 'Paid' : 'Unpaid' }}</p>
+                                <p class="text-green-600">{{ $order->payment_status == 'Paid' ? 'Lunas' : 'Belum Lunas' }}</p>
                             </div>
                         </div>
                     </div>
@@ -24,6 +24,6 @@
             </a>
         @endforeach
     @empty
-        <p>No orders available.</p>
+        <p>Tidak ada pesanan.</p>
     @endforelse
 </x-layout>

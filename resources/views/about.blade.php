@@ -1,54 +1,56 @@
 <x-layout>
     <x-slot:layoutTitle>{{ $pageTitle }}</x-slot:layoutTitle>
-    <x-slot:headTitle>About</x-slot:headTitle>
+    <x-slot:headTitle>Tentang</x-slot:headTitle>
 
     <main class="flex flex-col items-center flex-grow px-8 mb-20">
-        <h1 class="text-3xl font-bold text-center mt-8 mb-16">About Us</h1>
+        <h1 class="text-3xl font-bold text-center mt-8 mb-16">Tentang Kami</h1>
 
         <div class="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-16 space-y-12 lg:space-y-0">
             <div class="flex-shrink-0 w-72 h-72 rounded-lg overflow-hidden">
-                <img src="{{ asset('images/about-us-image.png') }}" alt="About Us Image"
+                <img src="{{ asset('images/about-us-image.png') }}" alt="Gambar Tentang Kami"
                     class="w-full h-full object-cover">
             </div>
             <div class="text-center lg:text-left max-w-lg">
                 <p class="text-lg leading-relaxed mb-6">
-                    Founded in 2015 in Yogyakarta, Indonesia, FoodDash Catering began as a small venture
-                    inspired by his love for cooking and the joy of sharing food. Starting with small orders for friends
-                    and neighbors, the business quickly gained recognition for its flavorful, high-quality, and
-                    affordable Indonesian dishes, leading to the opening of its first kitchen in 2018.
+                    Didirikan pada tahun 2015 di Yogyakarta, Indonesia, FoodDash Catering berawal dari sebuah usaha kecil
+                    yang terinspirasi oleh kecintaan pemiliknya pada memasak dan kebahagiaan berbagi makanan. Dimulai
+                    dengan pesanan kecil untuk teman dan tetangga, bisnis ini dengan cepat dikenal berkat hidangan
+                    Indonesia yang lezat, berkualitas tinggi, dan terjangkau, hingga akhirnya membuka dapur pertamanya
+                    pada tahun 2018.
                 </p>
                 <p class="text-lg leading-relaxed">
-                    Today, FoodDash Catering is a trusted name for weddings, corporate events, and family gatherings,
-                    offering six thoughtfully crafted vegetarian and non-vegetarian packages to suit diverse tastes and
-                    dietary needs. Each menu, prepared with fresh ingredients and a balance of traditional and
-                    contemporary flavors, reflects the company’s mission of "bringing blessings to every table" and
-                    ensures every meal leaves a lasting impression.
+                    Saat ini, FoodDash Catering adalah nama terpercaya untuk pernikahan, acara perusahaan, dan pertemuan
+                    keluarga, menawarkan enam paket vegetarian dan non-vegetarian yang dirancang dengan cermat untuk
+                    memenuhi berbagai selera dan kebutuhan diet. Setiap menu, disiapkan dengan bahan-bahan segar serta
+                    perpaduan rasa tradisional dan modern, mencerminkan misi perusahaan: "membawa berkah ke setiap meja"
+                    dan memastikan setiap hidangan meninggalkan kesan yang mendalam.
                 </p>
             </div>
         </div>
 
         <section class="bg-[#fcead8] mt-16 py-12 px-8 rounded-lg shadow-md w-full max-w-4xl">
-            <h2 class="text-2xl font-bold text-center mb-8">Why Choose Us?</h2>
+            <h2 class="text-2xl font-bold text-center mb-8">Mengapa Memilih Kami?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="flex flex-col items-center">
-                    <img src="{{ asset('images/free-delivery-icon.png') }}" alt="Free Delivery" class="w-16 h-16 mb-4">
-                    <h3 class="text-lg font-bold">Free Delivery</h3>
-                    <p class="text-center text-sm text-gray-600">Enjoy free delivery for all your orders within the
-                        service area.</p>
+                    <img src="{{ asset('images/free-delivery-icon.png') }}" alt="Pengiriman Gratis"
+                        class="w-16 h-16 mb-4">
+                    <h3 class="text-lg font-bold">Pengiriman Gratis</h3>
+                    <p class="text-center text-sm text-gray-600">Nikmati pengiriman gratis untuk semua pesanan Anda
+                        di dalam area layanan kami.</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="{{ asset('images/fresh-ingredients-icon.png') }}" alt="Fresh Ingredients"
+                    <img src="{{ asset('images/fresh-ingredients-icon.png') }}" alt="Bahan Segar"
                         class="w-16 h-16 mb-4">
-                    <h3 class="text-lg font-bold">Fresh Ingredients</h3>
-                    <p class="text-center text-sm text-gray-600">We use only the freshest ingredients to prepare every
-                        dish.</p>
+                    <h3 class="text-lg font-bold">Bahan Segar</h3>
+                    <p class="text-center text-sm text-gray-600">Kami hanya menggunakan bahan-bahan segar untuk
+                        menyiapkan setiap hidangan.</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="{{ asset('images/trusted-service-icon.png') }}" alt="Trusted Service"
+                    <img src="{{ asset('images/trusted-service-icon.png') }}" alt="Layanan Terpercaya"
                         class="w-16 h-16 mb-4">
-                    <h3 class="text-lg font-bold">Trusted Service</h3>
-                    <p class="text-center text-sm text-gray-600">Rely on us to make your events special with our trusted
-                        service.</p>
+                    <h3 class="text-lg font-bold">Layanan Terpercaya</h3>
+                    <p class="text-center text-sm text-gray-600">Percayakan kepada kami untuk menjadikan acara Anda
+                        istimewa dengan layanan yang dapat diandalkan.</p>
                 </div>
             </div>
         </section>

@@ -1,9 +1,9 @@
 <x-layout>
     <x-slot:layoutTitle>{{$pageTitle}}</x-slot:layoutTitle>
-    <x-slot:headTitle>Profile</x-slot:headTitle>
+    <x-slot:headTitle>Profil</x-slot:headTitle>
 
     <main class="flex flex-col justify-center items-center flex-grow px-8">
-        <h1 class="text-3xl font-bold text-center mb-16">My Profile</h1>
+        <h1 class="text-3xl font-bold text-center mb-16">Profil Saya</h1>
 
         <!-- Profile Content -->
         <div class="flex flex-col md:flex-row items-center md:items-start space-y-12 md:space-y-0 md:space-x-24">
@@ -18,11 +18,11 @@
             <!-- Right Section: Profile Details -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12 text-lg">
                 <div>
-                    <p class="font-semibold">Name:</p>
+                    <p class="font-semibold">Nama:</p>
                     <p>{{ $customer->name }}</p>
                 </div>
                 <div>
-                    <p class="font-semibold">Phone Number:</p>
+                    <p class="font-semibold">Nomor Telepon:</p>
                     <p>{{ $customer->phone }}</p>
                 </div>
                 <div>
@@ -30,7 +30,7 @@
                     <p>{{ $user->email }}</p>
                 </div>
                 <div>
-                    <p class="font-semibold">Address:</p>
+                    <p class="font-semibold">Alamat:</p>
                     <p>{!! nl2br(e($customer->address)) !!}</p>
                 </div>
             </div>

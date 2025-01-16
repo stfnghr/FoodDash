@@ -15,7 +15,7 @@
             <h1 class="text-6xl font-bold text-[#000000] leading-tight font-serif">FoodDash</h1>
             <h2 class="text-2xl font-serif text-[#000000] mt-4">CATERING</h2>
             <p class="text-lg font-serif text-[#000000] font-light mt-6">
-                Where every meal is a celebration <br> of taste and togetherness.
+                Di mana setiap hidangan adalah perayaan <br> rasa dan kebersamaan.
             </p>
             <div class="mt-8 flex space-x-4">
                 <!-- Sign Up Button -->

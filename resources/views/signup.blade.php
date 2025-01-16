@@ -60,7 +60,7 @@
 
                 <!-- Tautan ke Log In -->
                 <p class="mt-6 text-sm text-[#8E5F39] text-center">
-                    Already have an account?
+                    Sudah memiliki akun?
                     <a href="/login" class="font-bold text-black underline hover:text-[#8E5F39]">Log In</a>
                 </p>
 

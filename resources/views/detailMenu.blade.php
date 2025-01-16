@@ -5,11 +5,11 @@
     <div class="flex space-x-4 mt-5 p-10">
         {{-- Bagian Foto --}}
         <div class="w-1/3 h-auto flex justify-items-center flex-col">
-            <img src="{{ $menu->image ?? '/default-image.jpg' }}" alt="{{ $menu->name }}"
+            <img src="{{ $menu->image ?? '/default-image.png' }}" alt="{{ $menu->name }}"
                 class="w-full h-48 object-cover rounded-xl">
             <div class="bg-[#E9A05E] w-max p-3 mt-5 flex justify-items-center rounded-2xl">
                 <a href="/checkout/{{ $menu->id }}">
-                    <h1 class="font-bold">Order Now</h1>
+                    <h1 class="font-bold">Pesan Sekarang</h1>
                 </a>
             </div>
         </div>
